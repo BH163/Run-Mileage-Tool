@@ -1,3 +1,4 @@
+# MAIN
 def main():
     task = 0
     while(task != 3):
@@ -8,11 +9,7 @@ def main():
             mileageTracker()
         elif task == 3:
             break
-   
-
-
-
-
+# Weekly Goals
 def weeklyGoals():
     startMileage = int(input("Enter your usual weekly mileage: "))
     if (startMileage <= 0) :
@@ -33,7 +30,7 @@ def weeklyGoals():
     writeFile(fileLinesList, fileName)
     print("\n")
     
-
+# Write File
 def writeFile(fileLinesList,fileName):
     file = open(fileName, 'w')
     file.writelines(f'{"Wk":<2} {"Goals":>6} {"Ran":>6}'"\n"f'{"-" * 18 }'"\n")
@@ -41,6 +38,7 @@ def writeFile(fileLinesList,fileName):
         file.writelines(line)
     file.close()
 
+# Mileage Tracker
 def mileageTracker():
     file = input("Enter the file name to update: ")
     fileName = file
@@ -66,8 +64,6 @@ def mileageTracker():
     
     
     
-
-
-
-
 main()
+
+
