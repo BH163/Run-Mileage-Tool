@@ -11,6 +11,8 @@ def main():
    
 
 
+
+
 def weeklyGoals():
     startMileage = int(input("Enter your usual weekly mileage: "))
     if (startMileage <= 0) :
